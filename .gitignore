@@ -1,24 +1,15 @@
-# Compiled class file
-*.class
+# Ignore SQL dump files and backups
+*.bak
+*.sql~
+*.dump
+*.old.sql
 
-# Log file
-*.log
+# Optionally ignore all SQL files
+# Uncomment this only if you never want to commit .sql files
+# *.sql
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Ignore database-specific temp/cache
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
